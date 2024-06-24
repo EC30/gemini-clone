@@ -1,0 +1,147 @@
+.main{
+    flex:1;
+    min-height: 100vh;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding: 20px 20px; 
+    font-size: 20px;
+}
+.nav img{
+    width:50px;
+    border-radius: 50%;
+}
+.hero{
+    margin-top: 10%;
+    width:60%;
+    margin: auto;
+}
+.hero h1{
+    font-size: 56px;
+    color: #c4c7c5;
+}
+.hero img {
+    width: 25px;
+    display: block;
+}
+.card-section{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+.card {
+    background-color: #e6eaf1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    width: 200px;
+    height: 200px; 
+    border-radius: 25px;
+    position: relative; 
+    cursor: pointer;
+    font-size: 17px;
+}
+.card:hover{
+    background-color: #dfe4ea;
+}
+
+.card img {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    width: 35px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.message-box{
+    background-color: #e6eaf1;
+    border-radius: 25px;
+    margin-top: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.message-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    background-color: #e6eaf1;
+    font-size: 17px;
+}
+.message-box .icons{
+    display: flex;
+    gap:10px;
+}
+.main-button{
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding-bottom: 20px;
+    transform: translateX(-50%);
+}
+.main-button img {
+    width: 25px;
+    display: block; 
+}
+
+.result{
+    width: 60%;
+    margin: 0 auto;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.result .title{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.result .title img{
+    width:50px;
+    border-radius: 50%;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.loader hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+.result .data{
+    display: flex;
+    justify-content: flex-start;
+    gap:20px;
+    text-align: justify;
+}
+.result .data img{
+    width: 50px;
+    height: 50px;
+}

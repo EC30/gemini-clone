@@ -1,0 +1,63 @@
+.sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e6eaf1; 
+    padding: 20px;
+  }
+  
+  .sidebar img {
+    width: 25px;
+    display: block;
+  }
+  
+  .sidebar-top {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-top-chat {
+    display: flex;
+    border-radius: 25px; 
+    padding: 10px 15px;
+    align-items: center;
+    background-color: #e6eaf1;
+    gap: 10px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  .sidebar-top .menu-icon{
+    margin-bottom: 40px;
+  }
+  
+  .sidebar-top-recent {
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px; 
+  }
+  .sidebar-top-recent:hover, .sidebar-button-help:hover{
+    background-color: #e6eaf1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .sidebar-button {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-button-help {
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
